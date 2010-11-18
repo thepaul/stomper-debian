@@ -1,15 +1,18 @@
 Source: stomper
-Section: unknown
+Section: python
 Priority: extra
 Maintainer: paul cannon <pik@debian.org>
-Build-Depends: debhelper (>= 7.0.50~)
-Standards-Version: 3.8.4
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/stomper.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/stomper.git;a=summary
+Build-Depends: debhelper (>= 7.0.50~), python, python-support
+Standards-Version: 3.9.1
+Homepage: http://pypi.python.org/pypi/stomper
 
-Package: stomper
+Package: python-stomper
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${misc:Depends}, ${python:Depends}, python-setuptools
+Provides: ${python:Provides}
+Suggests: python-twisted-core
+Description: Python client implementation of the STOMP protocol
+ The client is attempting to be transport layer neutral. This module
+ provides functions to create and parse STOMP messages in a programmatic
+ fashion. The messages can be easily generated and parsed, however, it's
+ up to the user to do the sending and receiving.

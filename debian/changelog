@@ -1,5 +1,5 @@
-stomper (0.2.4-1) unstable; urgency=low
+stomper (0.2.4-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial packaging
 
  -- paul cannon <pik@debian.org>  Thu, 18 Nov 2010 15:39:33 -0700

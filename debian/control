@@ -2,7 +2,7 @@ Source: stomper
 Section: python
 Priority: extra
 Maintainer: paul cannon <pik@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), python, python-support
+Build-Depends: debhelper (>= 7.0.50~), python, python-support, python-setuptools
 Standards-Version: 3.9.1
 Homepage: http://pypi.python.org/pypi/stomper
 
